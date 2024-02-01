@@ -90,20 +90,20 @@ namespace Photon.Voice.Unity
             {
                 switch (level)
                 {
-                    case DebugLevel.ERROR: Debug.LogErrorFormat(fmt, args); break;
-                    case DebugLevel.WARNING: Debug.LogWarningFormat(fmt, args); break;
-                    case DebugLevel.INFO: Debug.LogFormat(fmt, args); break;
-                    case DebugLevel.ALL: Debug.LogFormat(fmt, args); break;
+                  // case DebugLevel.ERROR: Debug.LogErrorFormat(fmt, args); break;
+                  // case DebugLevel.WARNING: Debug.LogWarningFormat(fmt, args); break;
+                  // case DebugLevel.INFO: Debug.LogFormat(fmt, args); break;
+                  // case DebugLevel.ALL: Debug.LogFormat(fmt, args); break;
                 }
             }
             else
             {
                 switch (level)
                 {
-                    case DebugLevel.ERROR: Debug.LogErrorFormat(obj, fmt, args); break;
-                    case DebugLevel.WARNING: Debug.LogWarningFormat(obj, fmt, args); break;
-                    case DebugLevel.INFO: Debug.LogFormat(obj, fmt, args); break;
-                    case DebugLevel.ALL: Debug.LogFormat(obj, fmt, args); break;
+                  //  case DebugLevel.ERROR: Debug.LogErrorFormat(obj, fmt, args); break;
+                  //  case DebugLevel.WARNING: Debug.LogWarningFormat(obj, fmt, args); break;
+                  //  case DebugLevel.INFO: Debug.LogFormat(obj, fmt, args); break;
+                  //  case DebugLevel.ALL: Debug.LogFormat(obj, fmt, args); break;
                 }
             }
         }
