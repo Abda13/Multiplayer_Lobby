@@ -10,28 +10,24 @@ public class LeftSideMenuController : MonoBehaviour
     [SerializeField] RectTransform Settings;
     [SerializeField] RectTransform FriendList;
 
-    [SerializeField] RectTransform IncomingInvite;
-    [SerializeField] RectTransform IncomingChat;
-    [SerializeField] RectTransform IncomingFriendRequest;
-
 
     private void OnEnable()
     {
-        Buttons.LocalMove(new Vector3(-6f, 0,0), 1f);
+        Buttons.LocalMove(new Vector3(-6f, 0,0), 0.3f);
     }
 
 
     public void OnOpenSettingsMenuPressed()
     {
-        Buttons.LocalMove(new Vector3(120f, 0, 0), 1f);
-        Settings.LocalMove(new Vector3(10, 0, 0), 1f); 
+        Buttons.LocalMove(new Vector3(120f, 0, 0), 0.3f);
+        Settings.LocalMove(new Vector3(10, 0, 0), 0.3f); 
     }
 
 
     public void OnOpenFriendMenuPressed()
     {
-        Buttons.LocalMove(new Vector3(120f, 0, 0), 1f); 
-        FriendList.LocalMove(new Vector3(10, 0, 0), 1f);
+        Buttons.LocalMove(new Vector3(120f, 0, 0), 0.3f); 
+        FriendList.LocalMove(new Vector3(10, 0, 0), 0.3f);
     }
 
 
@@ -41,10 +37,10 @@ public class LeftSideMenuController : MonoBehaviour
 
     public void OnMenuBackPressed()
     {
-        Buttons.LocalMove(new Vector3(-6f, 0, 0), 1f);
+        Buttons.LocalMove(new Vector3(-6f, 0, 0), 0.3f);
 
-        Settings.LocalMove(new Vector3(230f, 0, 0), 1f);
-        FriendList.LocalMove(new Vector3(230f, 0, 0), 1f);
+        Settings.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+        FriendList.LocalMove(new Vector3(230f, 0, 0), 0.3f);
     }
 
 
