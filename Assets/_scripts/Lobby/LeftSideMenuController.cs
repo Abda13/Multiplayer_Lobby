@@ -9,6 +9,8 @@ public class LeftSideMenuController : MonoBehaviour
     [SerializeField] RectTransform Buttons;
     [SerializeField] RectTransform Settings;
     [SerializeField] RectTransform FriendList;
+    [SerializeField] RectTransform ChatWindow;
+    [SerializeField] RectTransform ChatHistory;
 
 
     private void OnEnable()
@@ -31,7 +33,17 @@ public class LeftSideMenuController : MonoBehaviour
     }
 
 
-
+    public void OnOpenChatHistory()
+    {
+        Buttons.LocalMove(new Vector3(120f, 0, 0), 0.3f);
+        ChatHistory.LocalMove(new Vector3(10, 0, 0), 0.3f);
+    }   
+    
+    public void OnOpenChatUserWindow()
+    {
+        Buttons.LocalMove(new Vector3(120f, 0, 0), 0.3f);
+        ChatWindow.LocalMove(new Vector3(10, 0, 0), 0.3f);
+    }
 
 
 
@@ -41,6 +53,18 @@ public class LeftSideMenuController : MonoBehaviour
 
         Settings.LocalMove(new Vector3(230f, 0, 0), 0.3f);
         FriendList.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+        ChatWindow.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+        ChatHistory.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+    }
+
+    public void HideEverything()
+    {
+        Buttons.LocalMove(new Vector3(120f, 0, 0), 0.3f);
+
+        Settings.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+        FriendList.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+        ChatWindow.LocalMove(new Vector3(230f, 0, 0), 0.3f);
+        ChatHistory.LocalMove(new Vector3(230f, 0, 0), 0.3f);
     }
 
 
@@ -48,6 +72,8 @@ public class LeftSideMenuController : MonoBehaviour
     {
         Buttons.localPosition = new Vector3(120f, 0, 0); 
         Settings.localPosition = new Vector3(230f, 0, 0); 
-        FriendList.localPosition = new Vector3(230f, 0, 0); 
+        FriendList.localPosition = new Vector3(230f, 0, 0);
+        ChatWindow.localPosition = new Vector3(230f, 0, 0);
+        ChatHistory.localPosition = new Vector3(230f, 0, 0); 
     }
 }

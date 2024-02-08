@@ -39,6 +39,7 @@ public static class SwitchableDebug
             case debugType.PlayfabData when SceneDeubg.inst.showPlayfabDataDebug:
             case debugType.PlayfabError when SceneDeubg.inst.showPlayfabErrorDebug:
             case debugType.PhotonChat when SceneDeubg.inst.showPhotonChatDebug:
+            case debugType.datadase when SceneDeubg.inst.showDatabaseDebug:
                 return true;
 
             default:
@@ -55,4 +56,5 @@ public enum debugType
     Playfab,
     PlayfabData,
     PlayfabError,
+    datadase
 }

@@ -21,6 +21,7 @@ public class SceneDeubg : MonoBehaviour
     public bool showPlayfabDataDebug;
     public bool showPlayfabErrorDebug;
     public bool showPhotonChatDebug;
+    public bool showDatabaseDebug;
 
     private void Awake()
     {

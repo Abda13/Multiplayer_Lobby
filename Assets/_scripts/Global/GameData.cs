@@ -29,6 +29,7 @@ public static class GameData
     public static lobbyPlayerController LocalLobbyPlayerController { get; set; }
     public static List<lobbyPlayerController> RemoteLobbyPlayerControllers => remoteLobbyPlayerControllers;
 
+
     public static User CurrentChatWindowUser;
     public static bool IsChatWindowOpen;
 
