@@ -164,7 +164,7 @@ public static class GameUtility
         JsonAsyncUtility.ToJson(chat, (c) =>
         {
             //send chat data
-            chatContianer chatContianer = new chatContianer(id, c);
+            chatContainer chatContianer = new chatContainer(id, c);
             GlobalEvents.OnSendChat?.Invoke(chatContianer);
             SwitchableDebug.Log($"Send Chat : {c}", debugType.PhotonChat);
         });

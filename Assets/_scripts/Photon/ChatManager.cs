@@ -77,7 +77,7 @@ public class ChatManager : MonoBehaviour, IChatClientListener
         }
     }
 
-    private void sendChat(chatContianer chatContianer)
+    private void sendChat(chatContainer chatContianer)
     {
         chatClient.SendPrivateMessage(chatContianer.id, chatContianer.msg);
     }
@@ -107,7 +107,7 @@ public class ChatManager : MonoBehaviour, IChatClientListener
         }
 
         SwitchableDebug.Log($"Player status : {user} : {status}", debugType.PhotonChat);
-        chatContianer friendStatus = new chatContianer(user, status, (string)message);
+        chatContainer friendStatus = new chatContainer(user, status, (string)message);
         GlobalEvents.OnFriendStatusUpdated?.Invoke(friendStatus);
     }
     public void DebugReturn(DebugLevel level, string message)

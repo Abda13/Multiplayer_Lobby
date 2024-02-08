@@ -23,7 +23,7 @@ public class FirendController : MonoBehaviour
     int onlineStatus;
     User user;
 
-    List<chatContianer> chatsHistory = new List<chatContianer>();
+    List<chatContainer> chatsHistory = new List<chatContainer>();
    freindListController freindListController;
 
     public void SetUp(User user, FriendType friendType, int onlineStatus, freindListController freindListController)

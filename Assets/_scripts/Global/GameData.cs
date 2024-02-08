@@ -86,20 +86,20 @@ public struct ChatContent
 
 
 [System.Serializable]
-public struct chatContianer
+public struct chatContainer
 {
     public string id;
     public int status;
     public string msg;
 
-    public chatContianer(string id, int status, string msg)
+    public chatContainer(string id, int status, string msg)
     {
         this.id = id;
         this.status = status;
         this.msg = msg;
     }
 
-    public chatContianer(string id, string msg)
+    public chatContainer(string id, string msg)
     {
         this.id = id;
         this.status = 0;

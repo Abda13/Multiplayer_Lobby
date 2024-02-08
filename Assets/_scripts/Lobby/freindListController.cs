@@ -201,7 +201,7 @@ public class freindListController : MonoBehaviour
         SearchResult.SetUp(user,FriendType.Search, 0, this);
     }
 
-    private void OnFriendStatusChaned(chatContianer status)
+    private void OnFriendStatusChaned(chatContainer status)
     {
         if(firendControllers.TryGetValue(status.id,out var f))
         {
